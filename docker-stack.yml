@@ -4,9 +4,7 @@ services:
   api:
     image: hachikor/express-swarm:latest
     ports:
-      - 8000:80
-    environment:
-      - version=0.4
+      - 80:8000
     deploy:
       replicas: 1
       update_config:
